@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightcyan;
+}
+
+/* Background Circle */
+
+.background-circle{
+    display: inline-block;
+    
+    position: absolute;
+    left: -150px;
+    top: -80px;
+
+    background: linear-gradient(to bottom, rgba(187, 31, 187, 0.521), rgb(143, 34, 143));
+    border-bottom-left-radius: 280px;
+    border-bottom-right-radius: 280px;
+    width: 550px;
+    height: 750px;
+}
+
+/* Container */
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Container Left */
+
+#container-left{
+    top: 10px;
+    position: relative;
+}
+#container-left .container-cell-top{
+    position: absolute;
+    left: 80px;
+    width: 190px;
+    height: 50px;
+    background-color: white;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+#container-left .container-cell{
+    display: inline-block;
+    width: 350px;
+    height: 600px;
+    border: 10px solid white;
+    background-image: url('images/walpaper-cell.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 55px;
+}
+.profile-img > img{
+    position: absolute;
+    top: 48px;
+    left: 54px;
+
+    border-radius: 50%;
+    width: 40px;
+}
+.pets-img{
+    margin-left: 85px;
+}
+.pets-img > img{
+    margin-top: 198px;
+    width: 70px;
+}
+
+/* Container Right */
+
+#container-right{
+    position: relative;
+
+    width: 500px;
+}
+#container-right h1{
+    color: rgb(128, 0, 128);
+    font-size: 40px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#container-right p{
+    font-family: cursive;
+    color: rgba(156, 40, 156, 0.685);
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px){
+    #container{
+        flex-direction: column;
+    }
+    #container-right{
+        padding: 50px;
+        background-color: rgba(128, 0, 128, 0.486);
+        margin-top: 120px;
+    }
+    #container-right h1{
+        text-align: center;
+        color: white;
+        width: 400px;
+        margin: auto;
+    }
+    #container-right p{
+        color: white;
+    }
+}
